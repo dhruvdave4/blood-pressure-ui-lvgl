@@ -206,13 +206,20 @@ lv_obj_set_style_bg_color(
 
 
 /*stop_button end */
+   /* deing custom container*/ 
+   lv_obj_t *hr_panel =
+    lv_obj_create(lv_screen_active());
 
+lv_obj_set_size(hr_panel,250,80);
+
+lv_obj_align(hr_panel,LV_ALIGN_TOP_MID,0,70);
   /*craet heard read consept  herer */  
   
-          hr_label = lv_label_create(lv_screen_active());
+          hr_label = lv_label_create(hr_panel);
            lv_label_set_text(hr_label, "heart_rate: 72 bpm");  
 
-             lv_obj_align(hr_label,LV_ALIGN_CENTER,0,10); 
+            //  lv_obj_align(hr_label,LV_ALIGN_CENTER,0,10);  
+            lv_obj_center(hr_panel);
             lv_obj_set_style_text_color(hr_label,lv_palette_main(LV_PALETTE_GREEN),0);
             lv_timer_create(hr_timer,1000,NULL);
   
