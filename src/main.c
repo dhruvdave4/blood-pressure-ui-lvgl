@@ -43,6 +43,7 @@
  *  STATIC VARIABLES
  **********************/
  static lv_obj_t *hr_label;  
+  lv_obj_t *hr_panel; 
  static int hr_level =72; 
  static bool show_value=false;  
  static lv_obj_t *status_label;
@@ -206,9 +207,8 @@ lv_obj_set_style_bg_color(
 
 
 /*stop_button end */
-   /* deing custom container*/ 
-   lv_obj_t *hr_panel =
-    lv_obj_create(lv_screen_active());
+   /* deing custom container*/  
+    hr_panel =lv_obj_create(lv_screen_active());
 
 lv_obj_set_size(hr_panel,250,80);
 
@@ -219,7 +219,7 @@ lv_obj_align(hr_panel,LV_ALIGN_TOP_MID,0,70);
            lv_label_set_text(hr_label, "heart_rate: 72 bpm");  
 
             //  lv_obj_align(hr_label,LV_ALIGN_CENTER,0,10);  
-            lv_obj_center(hr_panel);
+            lv_obj_center(hr_label);
             lv_obj_set_style_text_color(hr_label,lv_palette_main(LV_PALETTE_GREEN),0);
             lv_timer_create(hr_timer,1000,NULL);
   
