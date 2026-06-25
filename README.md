@@ -94,6 +94,11 @@ Run Application
 ```
 
 ---
+## Screenshot
+
+<img width="325" height="520" alt="image" src="https://github.com/user-attachments/assets/041745c5-61e5-448e-85e4-214e9f4e6d4e" />
+<img width="340" height="510" alt="image" src="https://github.com/user-attachments/assets/6e523d36-ca0f-4d5e-9a64-e8a8af5481ba" />
+
 
 ## Future Improvements
 
